@@ -12,14 +12,13 @@ def checkWord(word):
     for x in allWords:
         if(x==word):
             return True
-
-    print("The word you entered is not a valid English word!")
+    # print("The word you entered is not a valid English word!")
     return False
     
 def checkLength(word):
     wl = len(word)
     if(wl!=5):
-        print("enter 5 letter word!")
+        # print("enter 5 letter word!")
         return False
     else:
         return True
@@ -30,21 +29,29 @@ def addColor(word, ans):
     yellow = '\033[48;5;226m\033[38;5;16m\033[4m'
     end = '\033[0;0m \033[0;0m'
     colorStr = ""
+    exactMatch = ""
     z=0
     while(z<5):
-        if(ans[z]==word[z]):
-            colorStr = colorStr + green + " "+word[z].upper()+" "+ end
-        elif(ans.find(word[z]) != -1):
-            colorStr = colorStr + yellow + " "+word[z].upper()+" "+ end
+        curLetter = word[z]
+        if(ans[z]==curLetter):
+            exactMatch = exactMatch + curLetter
+        z=z+1
+    z=0
+    while(z<5):
+        curLetter = word[z]
+        if(ans[z]==curLetter):
+            colorStr = colorStr + green + " "+curLetter.upper()+" "+ end
+        elif(ans.find(curLetter) != -1 and exactMatch.find(curLetter) == -1):
+            colorStr = colorStr + yellow + " "+curLetter.upper()+" "+ end
         else:
-            colorStr = colorStr + grey +  " "+word[z].upper()+" " + end
+            colorStr = colorStr + grey +  " "+curLetter.upper()+" " + end
         z=z+1
     return colorStr
 
 def printTitle():
     print("---------------------------------")
     print("")
-    title = addColor("wordle", "hwfdef")
+    title = addColor("wordle", "kwrle")
     print ("--   "+title+" e   --")
     print("")
     print("                     - By Nikhil")
@@ -55,14 +62,16 @@ def printTitle():
 # ----------------------  Main Flow begins  ---------------------------------
 
 printTitle()
-s=0
+max=0
+xstr=""
 ansIndex = random.randrange(0,2308)
-answer = ansWords[ansIndex]
+# answer = ansWords[ansIndex]
+answer = "shawl"
 # print(answer)
-while(s<6):
+while(max<6):
     isValidLength = False
     isValidWord = False
-    s=s+1
+    max=max+1
     while(isValidLength == False or isValidWord==False):
         xstr = input(">")
         if(xstr == "quit"):
@@ -75,7 +84,7 @@ while(s<6):
     if(answer==xstr):
         print("All done. You win!!!!!!")
         break
-if(s==6 and xstr!=answer ):  
+if(max==6 and xstr!=answer ):  
     print("")      
     print("You lose. The answer is "+addColor(answer, answer))
     print("")      
