@@ -14,5 +14,5 @@ Run the following command from the `Wordle` folder
 ```
 
 ### To Quit
-Type the word `quite` to end the game.
+Type the word `quit` to end the game.
 
