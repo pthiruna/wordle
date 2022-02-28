@@ -24,9 +24,9 @@ def checkLength(word):
         return True
 
 def addColor(word, ans):
-    green = '\033[48;5;34m\033[38;5;16m\033[4m'
-    grey = '\033[48;5;237m\033[38;5;15m\033[4m'
-    yellow = '\033[48;5;226m\033[38;5;16m\033[4m'
+    green = '\033[48;5;34m\033[38;5;16m'
+    grey = '\033[48;5;237m\033[38;5;15m'
+    yellow = '\033[48;5;226m\033[38;5;16m'
     end = '\033[0;0m \033[0;0m'
     colorStr = ""
     exactMatch = ""
