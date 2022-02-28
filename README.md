@@ -8,11 +8,11 @@ You should be able to to run the game on other Operating systems provided you ha
 
 ### To install
 
-Download the zip file github and double click the `install.sh` script to install python (this is required to be run only once)
+Download the zip file from github (or clone the reop) and double click the `install.sh` script to install python (this is required to be run only once)
 
 or
 
-Run the following command from the `Wordle` folder 
+Run the following command from the `wordle` folder 
 
 ```
 ./install.sh
@@ -31,7 +31,7 @@ Download the zip file github and double click the `wordle.sh` file to run the ga
 
 or 
 
-Run the following command from the `Wordle` folder 
+Run the following command from the `wordle` folder 
 ```
 ./wordle.sh
 ```
