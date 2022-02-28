@@ -1,6 +1,6 @@
 # wordle
 
-CLI version of the widely popular wordle game.
+CLI version of the wildly popular wordle game.
 
 **Note:** only tested on mac. 
 
