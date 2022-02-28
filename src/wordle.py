@@ -65,8 +65,8 @@ printTitle()
 max=0
 xstr=""
 ansIndex = random.randrange(0,2308)
-# answer = ansWords[ansIndex]
-answer = "shawl"
+answer = ansWords[ansIndex]
+# answer = "shawl"
 # print(answer)
 while(max<6):
     isValidLength = False

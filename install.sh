@@ -1,2 +1,3 @@
 brew install python3
-chmod 777 wordle.sh
+DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
+chmod 777 $DIR/wordle.sh
