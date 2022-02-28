@@ -1,15 +1,26 @@
 # wordle
 
+CLI version of the widely popular wordle game.
+
+**Note:** only tested on mac. 
+
+You should be able to to run the game on other Operating systems provided you have `python3` installed. Open a terminal, navigate to the location where `wordle.py` is and run the program using the command `python3 wordle.py`
+
 ### To install
+
+Download the zip file github and double click the `install.sh` script to install python (this is required to be run only once)
+
+or
+
 Run the following command from the `Wordle` folder 
 
 ```
 ./install.sh
 ```
-or download the zip file github and double click the `install.sh` script to install python (this is required to be run only once)
 
-if the above script does't work run the following command 
+or
 
+Run command 
 ```
 brew install python3
 ```
