@@ -89,3 +89,4 @@ if(max==6 and xstr!=answer ):
     print("You lose. The answer is "+addColor(answer, answer))
     print("")      
 
+input("Bye!")
